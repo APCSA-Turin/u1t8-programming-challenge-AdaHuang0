@@ -66,7 +66,10 @@ public class Student {
         //implement code here!
         testScoresSum += newTestScore;
         testScoreCount ++;
-        highestTestScore = newTestScore;
+        if (newTestScore > highestTestScore) {
+            highestTestScore = newTestScore;
+        }
+        
     }
 
      // returns the Student's average test score as the
